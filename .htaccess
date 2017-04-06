@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /optic/
+RewriteRule ^login$ ?view=login [L]
+RewriteRule ^404$ ?view=error [L]
