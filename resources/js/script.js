@@ -1,17 +1,25 @@
-//carga inicial
+//spinner carga inicial
 document.addEventListener("DOMContentLoaded", function(){
-	terminarCarga();
+ terminarCarga();
 }, false);
-
-
+	
 $( document ).ready(function() {
+	//configuracion global de la carga de tarjetas
+	window.sr = ScrollReveal({ reset: true });
+	sr.reveal('.card', { 
+		duration: 1000,
+		distance: '100px',
+		origin: 'bottom'});
+	//previene que al apretar enter en el login se realice el envio anticipado
     $('input').keypress(function(e){
         if(e.which==13){ 
+			//TODO
             //$("[tabindex='"+($(this).attr("tabindex")+1)+"']").focus();
             //e.preventDefault();
             return e.keyCode = 9;
         }
     });
+	//configuraciones del template
     $(".collapse").sideNav({
         closeOnClick: true,
         draggable: true
@@ -29,6 +37,7 @@ $( document ).ready(function() {
         }
       );
 
+	//formulario generico para todo el sitio
     $('#form').submit(function() {
       	// Enviamos el formulario usando AJAX
         if(validarCampos($(this).attr('name'))){
@@ -42,7 +51,6 @@ $( document ).ready(function() {
                 dataType : 'json',
                 success : function(data){
                     if(data.success){
-                        Materialize.toast(data.redirect);
                         if(data.redirect){
                             location.href = data.location;
                         }
