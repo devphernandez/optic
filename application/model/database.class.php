@@ -9,7 +9,7 @@
 				parent::__construct('mysql:host=localhost;dbname=optic','root','');
 				parent::setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			}catch(PDOException $e){
-				$msg = 'No se puede establecer la conexión al servidor.';
+				$msg = 'No se puede establecer la conexion al servidor.';
 				Utiles::logger(__CLASS__, $msg);
 				die($msg);
 			}

@@ -8,7 +8,7 @@
 			require 'application/model/usuario.class.php';
 			$usuario = new Usuario();
 			$usuario->login($_POST['rut'], $_POST['pass'], isset($_POST['session']) ? 'y' : 'n');
-
+			
 		}else{
 
 			$title = 'Login';

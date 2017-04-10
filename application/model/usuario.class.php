@@ -28,7 +28,7 @@
 			}catch(Exception $e){
 				$json['error'] = true;
 				$json['msg'] = 'Credenciales incorrectas.';
-				Utiles::logger(__CLASS__, 'Intento de inicio de sesión con el rut '.$rut);
+				Utiles::logger(__CLASS__, 'Intento de inicio de sesion con el rut '.$rut);
 			}
 			
 			echo json_encode($json);
@@ -50,7 +50,7 @@
 				$_SESSION['usuario']['type'] 	= $value['USU_TYPE'];
 				$_SESSION['usuario']['store'] 	= $value['TIE_NAME'];
 			}
-			Utiles::logger(__CLASS__, 'El usuario '.$_SESSION['usuario']['name'].' a iniciado sesión.');
+			Utiles::logger(__CLASS__, 'El usuario '.$_SESSION['usuario']['name'].' a iniciado sesion.');
 		}
 
 	}

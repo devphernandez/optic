@@ -1,10 +1,10 @@
-<?php require'Application/View/public/header.php';?>
+<?php require'application/view/public/header.php';?>
 		<main>
             <div class="container">
 			    <div class="row valign-wrapper" style="height:600px">
 			        <div class="col s12 m6 offset-m3">
 			          	<div class="card black-text hoverable">
-			          		<form id="form" name="login" action ="?view=login" method="post">
+			          		<form id="form" name="login" action ="login" method="post">
 					            <div class="card-content">
 				                    <div class="row">
 				                        <div class="input-field col s12">

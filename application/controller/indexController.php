@@ -2,8 +2,10 @@
 	session_start();
 
 	if(isset($_SESSION['usuario'])){
-		echo 'index page';
-		//include 'logoutController.php';
+		?>
+			<p>index page</p>
+			<a href="logout">salir</a>
+		<?php
 	}else{
 		header('location: login');
 	}
