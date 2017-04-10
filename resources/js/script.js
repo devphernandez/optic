@@ -29,7 +29,7 @@ $( document ).ready(function() {
         }
       );
 
-    /*$('#form').submit(function() {
+    $('#form').submit(function() {
       	// Enviamos el formulario usando AJAX
         if(validarCampos($(this).attr('name'))){
             Materialize.toast('Complete los campos', 5000);
@@ -44,8 +44,7 @@ $( document ).ready(function() {
                     if(data.success){
                         Materialize.toast(data.redirect);
                         if(data.redirect){
-                            var dir = "?view=".concat(data.location);
-                            location.href = dir;
+                            location.href = data.location;
                         }
                     }else{
                         Materialize.toast(data.msg, 5000);
@@ -58,7 +57,7 @@ $( document ).ready(function() {
         }
         terminarCarga();
         return false;
-    }); */
+    });
 });
 function validaLogin(){
     var valida = false;
@@ -93,6 +92,3 @@ function terminarCarga(){
 	$('.preloader-background').fadeOut('slow');
 	$('.preloader-wrapper').fadeOut();
 }
-
-
-//Materialize.toast('I am a toast!', 4000) 
