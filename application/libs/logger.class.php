@@ -8,7 +8,7 @@ class Logger  {
 		
 		//directorio en el cual se guardara el archivo
 		$path = dirname(__DIR__).'\logs';
-		$this->_fileName = 'Logger_'.date("Ymd").'.log';
+		$this->_fileName = 'log_'.date("Ymd").'.log';
 		
 		if (empty($path)){
 			Throw new Exception("Path must be filled");
