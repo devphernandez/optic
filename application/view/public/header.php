@@ -20,7 +20,7 @@
 		<script src="resources/js/script.js"></script>
 		<script src="resources/js/scrollreveal.min.js"></script>
 	</head>
-	<body class="amber ">
+	<body>
 		<div class="preloader-background">
 			<div class="preloader-wrapper big active">
 				<div class="spinner-layer spinner-blue-only">

@@ -1,5 +1,5 @@
 		<header>
-			<nav class="orange">
+			<nav class="green">
 				<div class="container nav-wrapper">
 					<a href="#!" class="brand-logo">Logo</a>
 					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -29,11 +29,11 @@
 					    </li>
 
 					    <li><a class="subheader">Bienvenido</a></li>
-					    <li><a href="?view=dashboard"><i class="material-icons">dashboard</i>Dashboard</a></li>
-					    <li><a href="?view=empleados"><i class="material-icons">people</i>Empleados</a></li>
-					    <li><a href="?view=inventario"><i class="material-icons">star</i>Inventario</a></li>
-					    <li><a href="?view=insumos"><i class="material-icons">toys</i>Insumos</a></li>
-					    <li><a href="?view=cierreCaja"><i class="material-icons">monetization_on</i>Cierre de caja</a></li>
+					    <li><a href="dashboard"><i class="material-icons">dashboard</i>Dashboard</a></li>
+					    <li><a href="empleados"><i class="material-icons">people</i>Empleados</a></li>
+					    <li><a href="inventario"><i class="material-icons">star</i>Inventario</a></li>
+					    <li><a href="insumos"><i class="material-icons">toys</i>Insumos</a></li>
+					    <li><a href="cierreCaja"><i class="material-icons">monetization_on</i>Cierre de caja</a></li>
 					</ul>
 				</div>
 			</nav>

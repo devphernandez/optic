@@ -6,6 +6,7 @@
 			          	<div class="card black-text hoverable">
 			          		<form id="form" name="login" action ="login" method="post">
 					            <div class="card-content">
+								<span class="card-title">sistema de ventas optica</span>
 				                    <div class="row">
 				                        <div class="input-field col s12">
 				                            <input id="rut" name="rut" type="text" tabindex="1" />
